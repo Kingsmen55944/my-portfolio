@@ -135,13 +135,13 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/front.jpg" alt="">
+                  <img src="assets/img/portfolio/main.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">
   <div class="video-thumbnail" onclick="openVideo()">
     
-    <img src="assets/img/portfolio/aws.jpg"
+    <img src="assets/img/portfolio/app-2.jpg"
          alt="AWS Project Video">
 
     <div class="video-play-icon">
@@ -151,11 +151,10 @@
   </div>
 </div>
 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/A.jpg" alt="">
+                  <img src="assets/img/portfolio/app-3.jpg" alt="">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/sss.jpg" alt="">
+                  <img src="assets/img/portfolio/last.jpg" alt="">
                 </div>
 
               </div>
@@ -167,21 +166,34 @@
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Project Type</strong>: Static Portfolio Website Deployment & Security</li>
-                <li><strong>Cloud Platform</strong>: AWS EC2</li>
-                <li><strong>Web Server</strong>: Nginx</li>
-                <li><strong>Operating System</strong>: Linux</li>
-                <li><strong>Security</strong>: HTTPS / SSL-TLS / PKI</li>
+                <li><strong>Project Type</strong>: Containerized Website Deployment</li>
+<li><strong>Cloud Platform</strong>: AWS EC2</li>
+<li><strong>Containerization</strong>: Docker</li>
+<li><strong>Container Registry</strong>: Docker Hub</li>
+<li><strong>Operating System</strong>: Linux</li>
+<li><strong>Networking</strong>: Port Mapping (80 / 81)</li>
+
               </ul>
             </div>
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Secure Website Deployment on AWS EC2</h2>
-              <p>
-                I deployed and secured a website on an AWS EC2 instance running Ubuntu Linux, using Nginx as the web server. I connected to the server securely via SSH, configured the web server, uploaded and served website files, and implemented HTTPS using SSL/TLS certificates.
-This project also gave me practical experience with Public Key Infrastructure (PKI), including public/private keys, digital certificates, and Certificate Authorities. It strengthened my understanding of how cloud infrastructure, web servers, networking, and security work together to deliver a secure web application.
-Technologies: AWS EC2 • Ubuntu Linux • Nginx • SSH • SSL/TLS • HTTPS • PKI
+              <h2>Dockerized Multi-Container Web Deployment on AWS EC2</h2>
+              <p>I deployed and hosted two independent websites on a single <strong>AWS EC2 instance using Docker</strong>. </p>
 
-              </p>
+<p> The project focused on understanding containerization and how multiple applications can be deployed and isolated on the same cloud server. I built and published the application images to my public <strong>Docker Hub repositories</strong>, then pulled those images directly onto the EC2 instance and deployed them as separate running containers. </p>
+
+<h3>What I Implemented</h3>
+
+<ul> <li>Provisioned an <strong>AWS EC2 instance</strong> to serve as the deployment server.</li> <li>Installed and configured <strong>Docker</strong> on the EC2 instance.</li> <li>Pulled two application images from my <strong>public Docker Hub repositories</strong>.</li> <li>Created and ran two separate Docker containers from the images.</li> <li>Deployed both containers on the <strong>same EC2 instance</strong>.</li> <li>Configured port mapping so each website could be accessed independently: <ul> <li><strong>Container 1 → Port 80</strong></li> <li><strong>Container 2 → Port 81</strong></li> </ul> </li> <li>Verified that both containerized websites were running successfully at the same time.</li> </ul>
+
+<h3>Technologies Used</h3>
+
+<p> <strong>AWS EC2 | Docker | Docker Hub | Linux | Containerization | Port Mapping</strong> </p>
+
+<h3>Key Learning</h3>
+
+<p> This project gave me practical experience deploying containerized applications to a cloud environment. I learned how Docker can package applications into portable containers and how multiple containers can run independently on the same EC2 server while using different ports. </p>
+
+<p> It also strengthened my understanding of the relationship between <strong>cloud infrastructure, containerization, application deployment, and networking</strong>—key concepts in my journey toward becoming a Cloud/DevOps Engineer. </p>
             </div>
           </div>
 
@@ -236,7 +248,7 @@ Technologies: AWS EC2 • Ubuntu Linux • Nginx • SSH • SSL/TLS • HTTPS �
   <span class="video-close" onclick="closeVideo()">&times;</span>
 
   <video id="myVideo" controls>
-    <source src="assets/videos/testing.mp4" type="video/mp4">
+    <source src="assets/videos/dev.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
